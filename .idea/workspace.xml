@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2827dcb8-55c8-44f5-82c0-7a6d2a0d2508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/config/FilterConfig.java" afterDir="false" />
+    <list default="true" id="fb8e04d9-983f-4132-a5fc-55a41d579ff2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/CustomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/GlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/LoggingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/config/FilterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,46 +35,104 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="21PRM06UL7nnMTkmz9SBsRQSXUk" />
+  <component name="ProjectId" id="21RupeTvTeS9OnSe8kQcrkX1weG" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/apigateway-service/src/main/java/com" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\dotjoin_msa_version\apigateway-service\src\main\java\com\dotjoin\apigatewayservice" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.FirstSerivceApplication (1)">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApigatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="apigateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dotjoin.apigatewayservice.ApigatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dotjoin.discoveryservice.DiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstSerivceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="first-serivce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dotjoin.firstserivce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dotjoin.firstserivce.FirstSerivceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstSerivceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="first-serivce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dotjoin.firstserivce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dotjoin.firstserivce.FirstSerivceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ApigatewayServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.FirstSerivceApplication (1)" />
+      <item itemvalue="Spring Boot.FirstSerivceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.FirstSerivceApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2827dcb8-55c8-44f5-82c0-7a6d2a0d2508" name="Default Changelist" comment="" />
-      <created>1637840684009</created>
+      <changelist id="fb8e04d9-983f-4132-a5fc-55a41d579ff2" name="Default Changelist" comment="" />
+      <created>1637916405149</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637840684009</updated>
-      <workItem from="1637840685244" duration="609000" />
-      <workItem from="1637842215327" duration="795000" />
-      <workItem from="1637846526877" duration="303000" />
+      <updated>1637916405149</updated>
+      <workItem from="1637916406445" duration="7634000" />
+      <workItem from="1637983732043" duration="8556000" />
     </task>
     <servers />
   </component>
@@ -66,9 +140,57 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="200" key="new project wizard" timestamp="1637846814150">
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638005251898">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="339" y="200" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1637846814150" />
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638005251898" />
+    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1637998858093">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1637998858093" />
+    <state width="1877" height="184" key="GridCell.Tab.0.bottom" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.0.center" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.0.left" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.0.right" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.1.bottom" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.1.center" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.1.left" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1877" height="184" key="GridCell.Tab.1.right" timestamp="1638005090510">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="184" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state x="754" y="317" key="chooseDestDirectoryDialog" timestamp="1637917652623">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="754" y="317" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637917652623" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1638003444723">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1638003444723" />
+    <state x="623" y="235" key="search.everywhere.popup" timestamp="1637918781130">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1637918781130" />
   </component>
 </project>

@@ -1,28 +1,40 @@
 server:
   port: 8000
+
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: true
+    register-with-eureka: true #수정됨
+    fetch-registry: true #수정됨
     service-url:
       defaultZone: http://localhost:8761/eureka
-
-
-
 spring:
   application:
     name: apigateway-service
-
   cloud:
     gateway:
       routes:
         - id: first-service
-          uri: http://localhost:8081/
+          uri: lb://MY-FIRST-SERVICE #수정됨
           predicates:
             - Path=/first-service/**
+          filters:
+#            - AddRequestHeader: first-request, It is first request!
+#            - AddResponseHeader: first-response, It is first response!
+            - name: CustomFilter
+            - name: LoggingFilter
+              args:
+                baseMessage: Spring Clout Gateway Logging Filter
+                preLogger: true
+                postLogger: true
         - id: second-service
-          uri: http://localhost:8082/
+          uri: lb://MY-SECOND-SERVICE #수정됨
           predicates:
             - Path=/second-service/**
 
 
+      default-filters:
+        - name: GlobalFilter
+          args:
+            baseMessage: Spring Cloud Gateway Gloabl Filter
+            preLogger: true
+            postLogger: true
