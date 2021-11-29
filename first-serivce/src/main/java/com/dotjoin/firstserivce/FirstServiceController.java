@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 
 @RestController
-@RequestMapping("/first-service")
+@RequestMapping("")
 @Slf4j
 public class FirstServiceController {
     Environment env;

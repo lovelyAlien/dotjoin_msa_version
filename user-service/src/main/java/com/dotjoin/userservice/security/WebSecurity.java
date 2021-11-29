@@ -2,9 +2,11 @@ package com.dotjoin.userservice.security;
 
 import com.dotjoin.userservice.service.UserService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -12,6 +14,8 @@ import org.springframework.web.cors.CorsConfiguration;
 
 import java.util.Arrays;
 
+@Configuration
+@EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
     private UserService userService;
     private BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -25,25 +29,34 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+
+
         http.csrf().disable();
+
 //        http.authorizeRequests().antMatchers("/users/**").permitAll();
+        http.authorizeRequests().antMatchers("/**")
+                .hasIpAddress(env.getProperty("192.168.219.112")) // <- IP 변경
+                .and()
+                .addFilter(getAuthenticationFilter());
 
 //        http.authorizeRequests()
 //                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll();
 
 //        http.cors().configurationSource(corsConfigurationSource());
 
-        http.authorizeRequests().antMatchers("/actuator/**").permitAll();
-        http.authorizeRequests().antMatchers("/health_check/**").permitAll();
-        http.authorizeRequests().antMatchers("/**")
-                .hasIpAddress(env.getProperty("gateway.ip")) // <- IP 변경
-                .and()
-                .addFilterBefore(getAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
-
-//        http.authorizeRequests().antMatchers("/users")
+//        http.authorizeRequests().antMatchers("/actuator/**").permitAll();
+//        http.authorizeRequests().antMatchers("/health_check/**").permitAll();
+//        http.authorizeRequests().antMatchers("/login").permitAll();
+//        http.authorizeRequests().antMatchers("/**")
 //                .hasIpAddress(env.getProperty("gateway.ip")) // <- IP 변경
 //                .and()
-//                .addFilter(getAuthenticationFilter());
+//                .addFilterBefore(getAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
+
+
+
+
+
 //
 //        http.authorizeRequests().anyRequest().denyAll();
 

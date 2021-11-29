@@ -7,6 +7,12 @@ eureka:
     fetch-registry: true #수정됨
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
+
+
 spring:
   application:
     name: apigateway-service
@@ -34,10 +40,39 @@ spring:
                 preLogger: true
                 postLogger: true
             - RemoveRequestHeader=Cookie
-            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+            - RewritePath=/first-service/(?<segment>.*), /$\{segment}
 
         - id: second-service
           uri: lb://MY-SECOND-SERVICE #수정됨
           predicates:
             - Path=/second-service/**
 
+
+        - id: user-service
+          uri: lb://USER-SERVICE #수정됨
+          predicates:
+            - Path=/user-service/login
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+
+
+        - id: user-service
+          uri: lb://USER-SERVICE #수정됨
+          predicates:
+            - Path=/user-service/users
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+
+
+        - id: user-service
+          uri: lb://USER-SERVICE #수정됨
+          predicates:
+            - Path=/user-service/**
+            - Method=GET
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
