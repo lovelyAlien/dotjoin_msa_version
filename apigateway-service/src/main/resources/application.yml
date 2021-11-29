@@ -12,6 +12,13 @@ spring:
     name: apigateway-service
   cloud:
     gateway:
+      default-filters:
+        - name: GlobalFilter
+          args:
+            baseMessage: Spring Cloud Gateway Gloabl Filter
+            preLogger: true
+            postLogger: true
+
       routes:
         - id: first-service
           uri: lb://MY-FIRST-SERVICE #수정됨
@@ -26,15 +33,11 @@ spring:
                 baseMessage: Spring Clout Gateway Logging Filter
                 preLogger: true
                 postLogger: true
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+
         - id: second-service
           uri: lb://MY-SECOND-SERVICE #수정됨
           predicates:
             - Path=/second-service/**
 
-
-      default-filters:
-        - name: GlobalFilter
-          args:
-            baseMessage: Spring Cloud Gateway Gloabl Filter
-            preLogger: true
-            postLogger: true

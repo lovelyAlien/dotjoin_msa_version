@@ -5,12 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb8e04d9-983f-4132-a5fc-55a41d579ff2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/CustomFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/GlobalFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/LoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/jpa/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/jpa/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/WebSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/vo/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/vo/RequestLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/vo/RequestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/vo/ResponseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/vo/ResponseUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dotjoin_msa_version.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dotjoin_msa_version.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/config/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/config/FilterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -45,9 +85,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/apigateway-service/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user-service" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,17 +97,26 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
-  <component name="RunManager" selected="Spring Boot.FirstSerivceApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,10 +162,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dotjoin.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.ApigatewayServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.FirstSerivceApplication (1)" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.FirstSerivceApplication" />
     </list>
     <recent_temporary>
@@ -132,7 +191,10 @@
       <option name="presentableId" value="Default" />
       <updated>1637916405149</updated>
       <workItem from="1637916406445" duration="7634000" />
-      <workItem from="1637983732043" duration="8556000" />
+      <workItem from="1637983732043" duration="8881000" />
+      <workItem from="1638169144546" duration="1335000" />
+      <workItem from="1638171277108" duration="3541000" />
+      <workItem from="1638176576785" duration="4660000" />
     </task>
     <servers />
   </component>
@@ -140,50 +202,74 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638005251898">
+    <state x="440" y="114" key="#Project_Structure" timestamp="1638171336489">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638005251898" />
+    <state x="440" y="114" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1638171336489" />
+    <state x="414" y="165" width="1092" height="915" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638178241204">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="165" width="1092" height="915" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638178241204" />
     <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1637998858093">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1637998858093" />
-    <state width="1877" height="184" key="GridCell.Tab.0.bottom" timestamp="1638005090510">
+    <state x="689" y="329" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1638171651121">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.0.center" timestamp="1638005090510">
+    <state x="689" y="329" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638171651121" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1638171956848">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.0.left" timestamp="1638005090510">
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1638171956848" />
+    <state width="1293" height="258" key="GridCell.Tab.0.bottom" timestamp="1638180941049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.0.right" timestamp="1638005090510">
+    <state width="1293" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.0.center" timestamp="1638180941049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.1.bottom" timestamp="1638005090510">
+    <state width="1293" height="258" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.0.left" timestamp="1638180941049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.1.center" timestamp="1638005090510">
+    <state width="1293" height="258" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.0.right" timestamp="1638180941049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.1.left" timestamp="1638005090510">
+    <state width="1293" height="258" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.1.bottom" timestamp="1638180941049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
-    <state width="1877" height="184" key="GridCell.Tab.1.right" timestamp="1638005090510">
+    <state width="1293" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.1.center" timestamp="1638180941049">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="184" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638005090510" />
+    <state width="1293" height="258" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.1.left" timestamp="1638180941049">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="258" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state width="1293" height="258" key="GridCell.Tab.1.right" timestamp="1638180941049">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="258" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638180941049" />
+    <state x="619" y="243" key="NewModule_or_Project.wizard" timestamp="1638171898010">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="619" y="243" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1638171898010" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1638178261034">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1638178261034" />
     <state x="754" y="317" key="chooseDestDirectoryDialog" timestamp="1637917652623">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="754" y="317" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637917652623" />
+    <state x="339" y="200" key="new project wizard" timestamp="1638171786656">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="339" y="200" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1638171786656" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1638003444723">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="user-service" />
         <module name="apigateway-service" />
         <module name="first-serivce" />
         <module name="discovery-service" />
@@ -16,6 +17,7 @@
       <module name="apigateway-service" target="11" />
       <module name="discovery-service" target="11" />
       <module name="first-serivce" target="11" />
+      <module name="user-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -23,6 +25,7 @@
       <module name="apigateway-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="first-serivce" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
