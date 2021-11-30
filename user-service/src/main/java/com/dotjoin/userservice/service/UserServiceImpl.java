@@ -1,5 +1,6 @@
 package com.dotjoin.userservice.service;
 
+import com.dotjoin.userservice.client.OrderServiceClient;
 import com.dotjoin.userservice.dto.UserDto;
 import com.dotjoin.userservice.jpa.UserEntity;
 import com.dotjoin.userservice.jpa.UserRepository;
@@ -27,7 +28,7 @@ public class UserServiceImpl implements UserService {
     Environment env;
     RestTemplate restTemplate;
 
-//    OrderServiceClient orderServiceClient;
+    OrderServiceClient orderServiceClient;
 
     CircuitBreakerFactory circuitBreakerFactory;
 
@@ -43,20 +44,18 @@ public class UserServiceImpl implements UserService {
                 new ArrayList<>());
     }
 
-//    @Autowired
-//    public UserServiceImpl(UserRepository userRepository,
-//                           BCryptPasswordEncoder passwordEncoder,
-//                           Environment env,
-//                           RestTemplate restTemplate,
-//                           OrderServiceClient orderServiceClient,
-//                           CircuitBreakerFactory circuitBreakerFactory) {
-//        this.userRepository = userRepository;
-//        this.passwordEncoder = passwordEncoder;
-//        this.env = env;
-//        this.restTemplate = restTemplate;
+    @Autowired
+    public UserServiceImpl(UserRepository userRepository,
+                           BCryptPasswordEncoder passwordEncoder,
+                           Environment env,
+                           RestTemplate restTemplate) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+        this.env = env;
+        this.restTemplate = restTemplate;
 //        this.orderServiceClient = orderServiceClient;
 //        this.circuitBreakerFactory = circuitBreakerFactory;
-//    }
+    }
 
     @Override
     public UserDto createUser(UserDto userDto) {
@@ -65,10 +64,9 @@ public class UserServiceImpl implements UserService {
         ModelMapper mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         UserEntity userEntity = mapper.map(userDto, UserEntity.class);
+
         userEntity.setEncryptedPwd(passwordEncoder.encode(userDto.getPwd()));
-
         userRepository.save(userEntity);
-
         UserDto returnUserDto = mapper.map(userEntity, UserDto.class);
 
         return returnUserDto;
@@ -125,9 +123,13 @@ public class UserServiceImpl implements UserService {
         if (userEntity == null)
             throw new UsernameNotFoundException(email);
 
+
+
         ModelMapper mapper = new ModelMapper();
+
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
+        mapper.map(userEntity, UserDto.class);
         UserDto userDto = mapper.map(userEntity, UserDto.class);
         return userDto;
     }

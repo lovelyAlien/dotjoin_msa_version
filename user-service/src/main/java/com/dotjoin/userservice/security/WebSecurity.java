@@ -12,6 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 
+
 import java.util.Arrays;
 
 @Configuration
@@ -27,38 +28,25 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
-
-
+        http.authorizeRequests()
+                .antMatchers("/**")
+                .hasIpAddress("192.168.219.112")
+                .and()
+//                .logout().permitAll()
+//                .and()
+//                .formLogin()
+//                .and()
+                .addFilter(getAuthenticationFilter());
+//	        Turn off default authentication
         http.csrf().disable();
 
-//        http.authorizeRequests().antMatchers("/users/**").permitAll();
-        http.authorizeRequests().antMatchers("/**")
-                .hasIpAddress(env.getProperty("192.168.219.112")) // <- IP 변경
-                .and()
-                .addFilter(getAuthenticationFilter());
-
-//        http.authorizeRequests()
-//                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll();
-
-//        http.cors().configurationSource(corsConfigurationSource());
-
-//        http.authorizeRequests().antMatchers("/actuator/**").permitAll();
-//        http.authorizeRequests().antMatchers("/health_check/**").permitAll();
-//        http.authorizeRequests().antMatchers("/login").permitAll();
 //        http.authorizeRequests().antMatchers("/**")
-//                .hasIpAddress(env.getProperty("gateway.ip")) // <- IP 변경
+//                .hasIpAddress(env.getProperty("192.168.219.112")) // <- IP 변경
 //                .and()
-//                .addFilterBefore(getAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
-
-
-
-
-
-//
-//        http.authorizeRequests().anyRequest().denyAll();
+//                .addFilter(getAuthenticationFilter());
 
         http.headers().frameOptions().disable();
     }
@@ -77,23 +65,6 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userService).passwordEncoder(bCryptPasswordEncoder);
     }
 
-//    @Bean
-//    public CorsConfigurationSource corsConfigurationSource() {
-//        CorsConfiguration configuration = new CorsConfiguration();
-//
-//        configuration.addAllowedOrigin("http://192.168.25.22:9000");
-//        configuration.setAllowedMethods(Arrays.asList(
-//                HttpMethod.GET.name(),
-//                HttpMethod.HEAD.name(),
-//                HttpMethod.POST.name(),
-//                HttpMethod.PUT.name(),
-//                HttpMethod.DELETE.name()));
-//        configuration.addAllowedHeader("*");
-//        configuration.setAllowCredentials(true);
-//        configuration.setMaxAge(3600L);
-//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-//        source.registerCorsConfiguration("/**", configuration);
-//        return source;
-//    }
+
 
 }

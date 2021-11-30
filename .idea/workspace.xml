@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb8e04d9-983f-4132-a5fc-55a41d579ff2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_11_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_11_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_11_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_3_1_0_RC1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/AuthorizationHeaderFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/client/OrderServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first-serivce/src/main/java/com/dotjoin/firstserivce/FirstServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/first-serivce/src/main/java/com/dotjoin/firstserivce/FirstServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/AuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/WebSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +83,9 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -69,14 +93,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ApigatewayServiceApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstSerivceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstSerivceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="first-serivce" />
       <extension name="coverage">
         <pattern>
@@ -136,11 +162,6 @@
       <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.FirstSerivceApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.FirstSerivceApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,7 +175,8 @@
       <workItem from="1637983732043" duration="8881000" />
       <workItem from="1638169144546" duration="1335000" />
       <workItem from="1638171277108" duration="3541000" />
-      <workItem from="1638176576785" duration="12099000" />
+      <workItem from="1638176576785" duration="12237000" />
+      <workItem from="1638241961912" duration="21462000" />
     </task>
     <servers />
   </component>
@@ -170,10 +192,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="165" width="1092" height="915" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638178241204" />
-    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1637998858093">
+    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser" timestamp="1638275167276">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1637998858093" />
+    <state x="765" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1638275167276" />
     <state x="689" y="329" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1638171651121">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -182,38 +204,58 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1638171956848" />
-    <state width="1293" height="306" key="GridCell.Tab.0.bottom" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.0.bottom" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.0.center" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.0.center" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.0.left" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.0.left" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.0.right" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.0.right" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.1.bottom" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.1.bottom" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.1.center" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.1.center" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.1.left" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.1.left" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
-    <state width="1293" height="306" key="GridCell.Tab.1.right" timestamp="1638192537729">
+    <state width="1293" height="301" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.1.right" timestamp="1638279120213">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1293" height="306" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638192537729" />
+    <state width="1293" height="301" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.2.bottom" timestamp="1638279120214">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="301" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120214" />
+    <state width="1293" height="301" key="GridCell.Tab.2.center" timestamp="1638279120214">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="301" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120214" />
+    <state width="1293" height="301" key="GridCell.Tab.2.left" timestamp="1638279120213">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="301" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120213" />
+    <state width="1293" height="301" key="GridCell.Tab.2.right" timestamp="1638279120214">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1293" height="301" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1638279120214" />
+    <state x="490" y="195" key="Maven.ArtifactSearchDialog" timestamp="1638246369970">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="490" y="195" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638246369970" />
     <state x="619" y="243" key="NewModule_or_Project.wizard" timestamp="1638171898010">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -226,6 +268,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="754" y="317" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637917652623" />
+    <state x="394" y="269" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1638276930325">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="394" y="269" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1080@0.0.1920.1080" timestamp="1638276930325" />
     <state x="339" y="200" key="new project wizard" timestamp="1638171786656">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -234,9 +280,57 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1638003444723" />
-    <state x="623" y="235" key="search.everywhere.popup" timestamp="1637918781130">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1638278770684">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1637918781130" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1638278770684" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/AuthenticationFilter.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/security/AuthenticationFilter.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-service/src/main/java/com/dotjoin/userservice/service/UserServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/AuthorizationHeaderFilter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.6.0/spring-security-web-5.6.0.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class</url>
+          <line>34</line>
+          <properties class="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter" method="attemptAuthentication">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/apigateway-service/src/main/java/com/dotjoin/apigatewayservice/filter/AuthorizationHeaderFilter.java</url>
+          <line>61</line>
+          <properties class="com.dotjoin.apigatewayservice.filter.AuthorizationHeaderFilter" method="isJwtValid">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression=" String authorizationHeader = request.getHeaders().get(HttpHeaders.AUTHORIZATION).get(0);" />
+        <watch expression="isJwtValid(jwt)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
