@@ -64,6 +64,6 @@ management:
       exposure:
         include: refresh, health, beans, busrefresh, info, metrics, prometheus
 
-token:
-  expiration_time: 86400000
-  secret: user_token
+#token:
+#  expiration_time: 86400000
+#  secret: user_token
